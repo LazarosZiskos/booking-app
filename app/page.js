@@ -1,10 +1,5 @@
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
-  return (
-    <div className="container">
-      hello
-      <Button>asdasd</Button>
-    </div>
-  );
+  return <div className="container">hello</div>;
 }
