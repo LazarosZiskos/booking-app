@@ -7,9 +7,14 @@ import MobileNav from "./MobileNav";
 const Navbar = () => {
   return (
     <section className="py-4 border border-b-2 border-gray-100">
-      <div className="container items-center justify-between hidden md:flex">
-        <div className="text-2xl font-bold text-gray-headline">BookEase</div>
-        <div className="flex items-center gap-4">
+      <div className="container items-center justify-between  md:flex">
+        <Link
+          href="/"
+          className="text-2xl font-bold items-center justify-center text-gray-headline"
+        >
+          BookEase
+        </Link>
+        <div className="items-center gap-4 hidden md:flex">
           <ul className="flex items-center gap-4">
             {navLinks.map((link) => (
               <li className="" key={link.id}>
@@ -23,12 +28,20 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <Button className="bg-green rounded-none hover:bg-green-dark cursor-pointer text-[16px] leading-[24px]">
+        <Button className="bg-green rounded-none hidden md:block hover:bg-green-dark cursor-pointer text-[16px] leading-[24px]">
           Book Now
         </Button>
       </div>
-      <div className="text-right px-4 md:hidden">
-        <MobileNav />
+      <div className="text-right px-4 md:hidden flex justify-between items-center">
+        <Link
+          href="/"
+          className="text-2xl font-bold items-center justify-center text-gray-headline"
+        >
+          BookEase
+        </Link>
+        <div>
+          <MobileNav />
+        </div>
       </div>
     </section>
   );
