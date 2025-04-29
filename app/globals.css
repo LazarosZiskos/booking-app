@@ -7,9 +7,16 @@
   .container {
     @apply mx-auto max-w-7xl px-[32px];
   }
+  
 }
 
 @theme inline {
+
+ --color-green: #289D8F;
+ --color-green-dark: #228276;
+ --color-gray-headline:#274653;
+ --color-gray-text:#6A7280;
+
 
   --radius-sm: calc(var(--radius) - 4px);
 
