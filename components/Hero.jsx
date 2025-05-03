@@ -1,5 +1,6 @@
 import React from "react";
 import { MoveRight } from "lucide-react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -15,13 +16,17 @@ const Hero = () => {
             platform makes schedulling appointmets a breeze.
           </p>
           <div className="flex items-center justify-start gap-4">
-            <button className="flex items-center justify-center gap-2 bg-green cursor-pointer hover:bg-green-dark px-10 mt-8 py-4 font-bold text-white text-xl rounded-none">
-              Book Now
-              <MoveRight />
-            </button>
-            <button className="flex items-center justify-center gap-2 bg-white cursor-pointer hover:bg-[#EFF7F6] border border-green px-10 mt-8 py-4 font-bold text-green text-xl rounded-none">
-              Learn More
-            </button>
+            <Link href="/book-now">
+              <button className="flex items-center justify-center gap-2 bg-green cursor-pointer hover:bg-green-dark px-10 mt-8 py-4 font-bold text-white text-xl rounded-none">
+                Book Now
+                <MoveRight />
+              </button>
+            </Link>
+            <Link href="#how">
+              <button className="flex items-center justify-center gap-2 bg-white cursor-pointer hover:bg-[#EFF7F6] border border-green px-10 mt-8 py-4 font-bold text-green text-xl rounded-none">
+                Learn More
+              </button>
+            </Link>
           </div>
         </div>
       </div>
