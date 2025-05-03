@@ -28,9 +28,11 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <Button className="bg-green rounded-none hidden md:block hover:bg-green-dark cursor-pointer text-[16px] leading-[24px]">
-          Book Now
-        </Button>
+        <Link href="/book-now">
+          <Button className="bg-green rounded-none hidden md:block hover:bg-green-dark cursor-pointer text-[16px] leading-[24px]">
+            Book Now
+          </Button>
+        </Link>
       </div>
       <div className="text-right px-4 md:hidden flex justify-between items-center">
         <Link
